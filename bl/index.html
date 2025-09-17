@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Blue Ladder Business Enclave - Premium Commercial Spaces in Dombivali | Office Spaces for Rent</title>
+    <meta name="description" content="Blue Ladder Business Enclave - Dombivali's first Emirates-influenced commercial integrated business park. 14-storey commercial icon with premium office spaces, world-class amenities, and strategic location.">
+    <meta name="keywords" content="Blue Ladder, Business Enclave, Dombivali, Commercial Spaces, Office Rent, Business Park, Premium Offices, Commercial Property, Maharashtra">
+    <meta name="author" content="Blue Ladder Business Enclave">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blue Ladder Business Enclave - Premium Commercial Spaces in Dombivali">
+    <meta property="og:description" content="Dombivali's first Emirates-influenced commercial integrated business park with 14-storey commercial icon and world-class amenities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blueladder.com">
+    <meta property="og:image" content="images/hero-0.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blue Ladder Business Enclave - Premium Commercial Spaces">
+    <meta name="twitter:description" content="Dombivali's first Emirates-influenced commercial integrated business park">
+    <meta name="twitter:image" content="images/hero-0.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://blueladder.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo .logo {
+            height: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #007bff;
+        }
+
+        /* WhatsApp Navigation Button - Icon Only */
+        .whatsapp-nav {
+            color: #25D366 !important;
+            font-weight: 600 !important;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: rgba(37, 211, 102, 0.1);
+        }
+
+        .whatsapp-nav:hover {
+            color: #128C7E !important;
+            transform: scale(1.1);
+            background: rgba(37, 211, 102, 0.2);
+        }
+
+        .whatsapp-nav i {
+            font-size: 1.5rem;
+        }
+
+        .enquire-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .enquire-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .nav-menu {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .enquire-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-carousel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .cta-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .cta-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .about-text .subtitle {
+            font-size: 1.3rem;
+            color: #007bff;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .feature-item i {
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+
+        .feature-item span {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-text h2 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+        }
+
+        /* Amenities Section */
+        .amenities {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .amenities h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .amenities > .container > p {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .amenity-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .amenity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .amenity-card i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        .amenity-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .amenity-card p {
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .amenities-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+            
+            .amenity-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .contact > .container > p {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: #007bff;
+            min-width: 40px;
+        }
+
+        .contact-item.whatsapp-item i {
+            color: #25D366;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .contact-item p {
+            color: #666;
+            margin: 0;
+        }
+
+        .whatsapp-link {
+            color: #25D366;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            color: #128C7E;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .form-group textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Popup Modal */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-overlay.active {
+            display: flex;
+        }
+
+        .popup-modal {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .popup-close:hover {
+            color: #333;
+        }
+
+        .popup-modal h2 {
+            margin-bottom: 1rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .popup-modal .form-group textarea {
+            height: 60px;
+        }
+
+        /* Success Popup */
+        .success-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-popup.active {
+            display: flex;
+        }
+
+        .success-modal {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+
+        .success-modal i {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+
+        .success-modal h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .success-modal p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .success-close {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .success-close:hover {
+            background: #0056b3;
+        }
+
+        /* Contact Input Validation */
+        .contact-input-container {
+            position: relative;
+        }
+
+        .contact-prefix {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+            font-weight: 600;
+            pointer-events: none;
+        }
+
+        .contact-input {
+            padding-left: 3.5rem !important;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        /* Schema.org structured data for SEO */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Blue Ladder Business Enclave",
+        "description": "Dombivali's first Emirates-influenced commercial integrated business park with premium office spaces and world-class amenities",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dombivali",
+            "addressRegion": "Maharashtra",
+            "addressCountry": "IN"
+        },
+        "telephone": "+91-82915-05555",
+        "url": "https://blueladder.com",
+        "sameAs": [
+            "https://wa.me/918291505555"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Blue Ladder Business Enclave Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/918291505555?text=Tell%20Me%20about%20Blue%20Ladder" target="_blank" class="whatsapp-nav" title="WhatsApp" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+            <button class="enquire-btn" onclick="showPopup()" aria-label="Open enquiry form">Enquire Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active">
+                <img src="images/hero-0.jpg" alt="Blue Ladder Business Enclave Night View with Metro Train">
+            </div>
+            <div class="hero-slide">
+                <img src="images/hero-1.jpg" alt="Blue Ladder Business Enclave Building Exterior">
+            </div>
+            <div class="hero-slide">
+                <img src="images/hero-2.jpg" alt="Blue Ladder Business Enclave Interior Design">
+            </div>
+            <div class="hero-slide">
+                <img src="images/hero-3.jpg" alt="Blue Ladder Business Enclave Premium Facilities">
+            </div>
+        </div>
+        <div class="hero-content">
+            <button class="cta-btn" onclick="showPopup()" aria-label="Open enquiry form">Enquire Now</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/building-main.jpg" alt="Blue Ladder Business Enclave - Main Building View">
+                </div>
+                <div class="about-text">
+                    <h2>Blue Ladder Business Enclave</h2>
+                    <p class="subtitle">Dombivali's first emirates-influenced commercial integrated business park</p>
+                    <p>A Towering Symbol Of Modern Corporate Excellence, Is Designed To Elevate Your Business Success. With Its Premium Office Spaces, World-class Amenities, And Strategic Location, It Creates The Perfect Environment For Businesses To Thrive And Grow.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-building"></i>
+                            <span>14-storey Commercial Icon</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Top-tier Facilities Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-compass"></i>
+                            <span>Vastu-compliant Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Rooftop Cafeteria</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-glass"></i>
+                            <span>All Sides Glazed Facade</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-car-side"></i>
+                            <span>Ample Parking And Valet Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Blue Ladder Business Enclave Gallery Image 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Blue Ladder Business Enclave Gallery Image 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Blue Ladder Business Enclave Gallery Image 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Blue Ladder Business Enclave Gallery Image 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Blue Ladder Business Enclave Gallery Image 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Blue Ladder Business Enclave Gallery Image 6" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Premium Amenities</h2>
+            <p>Everything you need for a successful business environment</p>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <i class="fas fa-car" aria-hidden="true"></i>
+                    <h3>Premium Parking</h3>
+                    <p>Dedicated parking spaces for all tenants</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h3>24/7 Security</h3>
+                    <p>Round-the-clock security with CCTV surveillance</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-wifi" aria-hidden="true"></i>
+                    <h3>High-Speed Internet</h3>
+                    <p>Fiber optic connectivity throughout the building</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-couch" aria-hidden="true"></i>
+                    <h3>Business Lounge</h3>
+                    <p>Comfortable spaces for meetings and networking</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h3>Conference Rooms</h3>
+                    <p>Fully equipped meeting rooms available</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-bolt" aria-hidden="true"></i>
+                    <h3>Power Backup</h3>
+                    <p>100% power backup with generators</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3>Green Spaces</h3>
+                    <p>Landscaped gardens and outdoor areas</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <h3>Flexible Hours</h3>
+                    <p>24/7 access to your office space</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Ready to elevate your business? Contact us today</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 82915 05555</p>
+                        </div>
+                    </div>
+                    <div class="contact-item whatsapp-item">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/918291505555?text=Tell%20Me%20about%20Blue%20Ladder" target="_blank" class="whatsapp-link">
+                                Chat with us on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Dombivali, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="submitContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact *</label>
+                            <div class="contact-input-container">
+                                <span class="contact-prefix">+91</span>
+                                <input type="tel" id="contact" name="contact" class="contact-input" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="Enter 10-digit mobile number">
+                                <div class="error-message" id="contactError">Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="purpose">Purpose *</label>
+                            <select id="purpose" name="purpose" required>
+                                <option value="">Select purpose</option>
+                                <option value="Office">Office</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Investment">Investment</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select budget range</option>
+                                <option value="50 Lakh+">50 Lakh+</option>
+                                <option value="1 Cr+">1 Cr+</option>
+                                <option value="2 Cr+">2 Cr+</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Premium Commercial Integrated Business Park in Dombivali</p>
+            <p>&copy; 2024 Blue Ladder Business Enclave. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+        <div class="popup-modal">
+            <button class="popup-close" onclick="hidePopup()" aria-label="Close popup">&times;</button>
+            <h2 id="popupTitle">Get In Touch</h2>
+            <form id="popupForm" onsubmit="submitPopupForm(event)">
+                <div class="form-group">
+                    <label for="popupName">Name *</label>
+                    <input type="text" id="popupName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="popupContact">Contact *</label>
+                    <div class="contact-input-container">
+                        <span class="contact-prefix">+91</span>
+                        <input type="tel" id="popupContact" name="contact" class="contact-input" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="Enter 10-digit mobile number">
+                        <div class="error-message" id="popupContactError">Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="popupPurpose">Purpose *</label>
+                    <select id="popupPurpose" name="purpose" required>
+                        <option value="">Select purpose</option>
+                        <option value="Office">Office</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Investment">Investment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="popupBudget">Budget *</label>
+                    <select id="popupBudget" name="budget" required>
+                        <option value="">Select budget range</option>
+                        <option value="50 Lakh+">50 Lakh+</option>
+                        <option value="1 Cr+">1 Cr+</option>
+                        <option value="2 Cr+">2 Cr+</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="popupMessage">Message</label>
+                    <textarea id="popupMessage" name="message" rows="2"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Popup -->
+    <div class="success-popup" id="successPopup">
+        <div class="success-modal">
+            <i class="fas fa-check-circle"></i>
+            <h3>Thank You!</h3>
+            <p>Our Experts will get back to you!</p>
+            <button class="success-close" onclick="hideSuccessPopup()">OK</button>
+        </div>
+    </div>
+
+    <!-- Hidden content for screen readers -->
+    <div class="sr-only">
+        <h1>Blue Ladder Business Enclave - Premium Commercial Spaces in Dombivali</h1>
+        <p>Dombivali's first Emirates-influenced commercial integrated business park offering premium office spaces, world-class amenities, and strategic location for business success.</p>
+    </div>
+
+    <script>
+        // Hero Carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Popup Functions
+        let popupTimer;
+        let popupShown = false;
+        let formSubmitted = false;
+
+        function showPopup() {
+            document.getElementById('popupOverlay').classList.add('active');
+            popupShown = true;
+            clearTimeout(popupTimer);
+        }
+
+        function hidePopup() {
+            document.getElementById('popupOverlay').classList.remove('active');
+            if (!formSubmitted) {
+                // Set timer for 30 seconds if form not submitted
+                popupTimer = setTimeout(showPopup, 30000);
+            }
+        }
+
+        // Success Popup Functions
+        function showSuccessPopup() {
+            document.getElementById('successPopup').classList.add('active');
+        }
+
+        function hideSuccessPopup() {
+            document.getElementById('successPopup').classList.remove('active');
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('popupOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hidePopup();
+            }
+        });
+
+        // Contact validation function
+        function validateContact(input, errorElement) {
+            const value = input.value.trim();
+            const isValid = /^[6-9][0-9]{9}$/.test(value);
+            
+            if (value && !isValid) {
+                errorElement.style.display = 'block';
+                input.style.borderColor = '#dc3545';
+                return false;
+            } else {
+                errorElement.style.display = 'none';
+                input.style.borderColor = '#ddd';
+                return true;
+            }
+        }
+
+        // Add input event listeners for contact validation
+        document.getElementById('contact').addEventListener('input', function() {
+            // Allow only numbers
+            this.value = this.value.replace(/[^0-9]/g, '');
+            validateContact(this, document.getElementById('contactError'));
+        });
+
+        document.getElementById('popupContact').addEventListener('input', function() {
+            // Allow only numbers
+            this.value = this.value.replace(/[^0-9]/g, '');
+            validateContact(this, document.getElementById('popupContactError'));
+        });
+
+        // Start carousel and auto-popup when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start carousel
+            setInterval(nextSlide, 10000); // 10 seconds interval
+            
+            // Auto-popup after 5 seconds
+            popupTimer = setTimeout(showPopup, 5000);
+        });
+
+        // Google Sheets Integration - REPLACE WITH YOUR NEW URL
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzMhj4_8AJmUMObtz7DK4TMq60bosceSJ5srVsbxH2Bdd64Gfl0iRQu69DvtXwXG2s7oQ/exec';
+
+        // Form submission function
+        function submitFormData(formData) {
+            const params = new URLSearchParams();
+            params.append('name', formData.name);
+            params.append('contact', formData.contact);
+            params.append('purpose', formData.purpose);
+            params.append('budget', formData.budget);
+            params.append('message', formData.message);
+            
+            return fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: params.toString()
+            });
+        }
+
+        // Handle Contact Form Submission
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            const contactInput = document.getElementById('contact');
+            const contactError = document.getElementById('contactError');
+            
+            if (!validateContact(contactInput, contactError)) {
+                return;
+            }
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                contact: '+91' + document.getElementById('contact').value,
+                purpose: document.getElementById('purpose').value,
+                budget: document.getElementById('budget').value,
+                message: document.getElementById('message').value
+            };
+            
+            submitFormData(formData).then(() => {
+                document.getElementById('contactForm').reset();
+                showSuccessPopup();
+                formSubmitted = true;
+            }).catch(error => {
+                console.error('Error:', error);
+                document.getElementById('contactForm').reset();
+                showSuccessPopup();
+                formSubmitted = true;
+            });
+        }
+
+        // Handle Popup Form Submission
+        function submitPopupForm(event) {
+            event.preventDefault();
+            
+            const popupContactInput = document.getElementById('popupContact');
+            const popupContactError = document.getElementById('popupContactError');
+            
+            if (!validateContact(popupContactInput, popupContactError)) {
+                return;
+            }
+            
+            const formData = {
+                name: document.getElementById('popupName').value,
+                contact: '+91' + document.getElementById('popupContact').value,
+                purpose: document.getElementById('popupPurpose').value,
+                budget: document.getElementById('popupBudget').value,
+                message: document.getElementById('popupMessage').value
+            };
+            
+            submitFormData(formData).then(() => {
+                document.getElementById('popupForm').reset();
+                hidePopup();
+                showSuccessPopup();
+                formSubmitted = true;
+            }).catch(error => {
+                console.error('Error:', error);
+                document.getElementById('popupForm').reset();
+                hidePopup();
+                showSuccessPopup();
+                formSubmitted = true;
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+</body>
+</html>
